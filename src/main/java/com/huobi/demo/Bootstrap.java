@@ -20,6 +20,7 @@ public class Bootstrap {
   @Value("${uri.protocol:wss://}")
   String protocol;
 
+  //huobi cloud don't add '/api' eg. uri.host:www.huobi.com.ru
   @Value("${uri.host:api.huobi.pro}")
   String host;
 
@@ -29,6 +30,7 @@ public class Bootstrap {
   @Value("${uri.ao.path:/ws/v1}")
   String aO;
 
+  //huobi cloud uri.market.path is /api/ws
   @Value("${uri.market.path:/ws}")
   String market;
 
